@@ -17,7 +17,7 @@
 				#update account balance of to account
 				$query = "UPDATE `accounts` SET `accountbalance` = accountbalance + " . $_GET['itemamount'] . " WHERE `accountid` = " . $_GET['itemaccountto'];
 				if (mysqli_query($link, $query)) {
-					#echo "Success";
+					echo "Success";
 					#echo $query;
 				} else {
 					echo "MySQL error was: " . mysqli_error($link);

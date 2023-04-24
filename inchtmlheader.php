@@ -28,7 +28,7 @@ function switchview(prefcashflowview) {
 	xmlhttp.onreadystatechange = function() {
 	  if (this.readyState == 4 && this.status == 200) {
 		if(this.responseText) {
-			if (this.responseText != 'Success') { alert(this.responseText); };
+			if (this.responseText.trim() !== 'Success') { alert(this.responseText); }
 		}
 		window.location.reload();
 		return;
@@ -44,7 +44,7 @@ function sqlitemdelete(anotheritemid,deletetype) {
 	xmlhttp.onreadystatechange = function() {
 	  if (this.readyState == 4 && this.status == 200) {
 		if(this.responseText) {
-			if (this.responseText != 'Success') { alert(this.responseText); };
+			if (this.responseText.trim() !== 'Success') { alert(this.responseText); }
 		}
 		window.location.reload();
 		return;
@@ -54,12 +54,12 @@ function sqlitemdelete(anotheritemid,deletetype) {
 	xmlhttp.send();
 }
 function sqlitemupdatepaid(itemid,itemaccountfrom,itemaccountto,itemamount) {
-	
+
 	var xmlhttp = new XMLHttpRequest();
 	xmlhttp.onreadystatechange = function() {
 	  if (this.readyState == 4 && this.status == 200) {
 		if(this.responseText) {
-			if (this.responseText != 'Success') { alert(this.responseText); };
+			if (this.responseText.trim() !== 'Success') { alert(this.responseText); }
 		}
 		window.location.reload();
 		return;
@@ -120,7 +120,7 @@ function sqliteminsert() {
 	xmlhttp.onreadystatechange = function() {
 	  if (this.readyState == 4 && this.status == 200) {
 		if(this.responseText) {
-			if (this.responseText != 'Success') { alert(this.responseText); };
+			if (this.responseText.trim() !== 'Success') { alert(this.responseText); }
 		}
 		window.location.reload();
 		return;
@@ -146,7 +146,7 @@ function sqlitemedit() {
 	xmlhttp.onreadystatechange = function() {
 	  if (this.readyState == 4 && this.status == 200) {
 		if(this.responseText) {
-			if (this.responseText != 'Success') { alert(this.responseText); };
+			if (this.responseText.trim() !== 'Success') { alert(this.responseText); }
 		}
 		window.location.reload();
 		return;
@@ -177,7 +177,7 @@ function sqlaccountupdatecolour(accountid,accountcolour) {
 	xmlhttp.onreadystatechange = function() {
 	  if (this.readyState == 4 && this.status == 200) {
 		if(this.responseText) {
-			if (this.responseText != 'Success') { alert(this.responseText); };
+			if (this.responseText.trim() !== 'Success') { alert(this.responseText); }
 		}
 		window.location.reload();
 		return;
@@ -192,7 +192,7 @@ function updatePrefsShowFavs(checked) {
 	xmlhttp.onreadystatechange = function() {
 	  if (this.readyState == 4 && this.status == 200) {
 		if(this.responseText) {
-			if (this.responseText != 'Success') { alert(this.responseText); };
+			if (this.responseText.trim() !== 'Success') { alert(this.responseText); }
 		}
 		window.location.reload();
 		return;
@@ -212,7 +212,7 @@ function updatePrefsShowFavsAssets(checked) {
 	xmlhttp.onreadystatechange = function() {
 	  if (this.readyState == 4 && this.status == 200) {
 		if(this.responseText) {
-			if (this.responseText != 'Success') { alert(this.responseText); };
+			if (this.responseText.trim() !== 'Success') { alert(this.responseText); }
 		}
 		window.location.reload();
 		return;
@@ -232,7 +232,7 @@ function sqlitemupdateaccountfrom(itemparentid,itemaccountfrom) {
 	xmlhttp.onreadystatechange = function() {
 	  if (this.readyState == 4 && this.status == 200) {
 		if(this.responseText) {
-			if (this.responseText != 'Success') { alert(this.responseText); };
+			if (this.responseText.trim() !== 'Success') { alert(this.responseText); }
 		}
 		window.location.reload();
 		return;
@@ -247,7 +247,7 @@ function sqlitemupdateaccountto(itemparentid,itemaccountto) {
 	xmlhttp.onreadystatechange = function() {
 	  if (this.readyState == 4 && this.status == 200) {
 		if(this.responseText) {
-			if (this.responseText != 'Success') { alert(this.responseText); };
+			if (this.responseText.trim() !== 'Success') { alert(this.responseText); }
 		}
 		window.location.reload();
 		return;
@@ -262,7 +262,7 @@ function sqlaccounttogglefav(accountid,state) {
 	xmlhttp.onreadystatechange = function() {
 	  if (this.readyState == 4 && this.status == 200) {
 		if(this.responseText) {
-			if (this.responseText != 'Success') { alert(this.responseText); };
+			if (this.responseText.trim() !== 'Success') { alert(this.responseText); }
 		}
 		window.location.reload();
 		return;
@@ -303,7 +303,7 @@ function sqlaccountinsert(type,name,balance) {
 	xmlhttp.onreadystatechange = function() {
 	  if (this.readyState == 4 && this.status == 200) {
 		if(this.responseText) {
-			if (this.responseText != 'Success') { alert(this.responseText); };
+			if (this.responseText.trim() !== 'Success') { alert(this.responseText); }
 		}
 		window.location.reload();
 		return;
